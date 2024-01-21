@@ -62,7 +62,7 @@ const FixedNav = ()=>
      return(
           <div className="bg-gray-950 h-16 w-full text-white flex flex-row items-center justify-evenly cursor-pointer">
         <div className="flex hover:border hover:scale-95 p-2">
-          <img src={amazon} className="h-7" alt="" />
+          <img src={amazon} className="h-7" alt="amazon" />
           <p>.in</p>
         </div>
 
