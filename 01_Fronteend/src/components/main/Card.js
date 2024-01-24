@@ -6,10 +6,11 @@ const Card = ({ CardDetails, title }) => {
   const navigate = useNavigate()
 
   const handleClick = (index)=>{
-    console.log(CardDetails[index].text)
+
     if(CardDetails && CardDetails[index].text === 'Mobiles')
     {
-      navigate('/mobiles')  
+      // window.open('/mobiles')
+      navigate('/mobiles') 
     }
   }
 

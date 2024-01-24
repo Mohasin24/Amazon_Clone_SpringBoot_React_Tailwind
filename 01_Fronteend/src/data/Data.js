@@ -242,3 +242,36 @@ export const Products = [
      }
    ];
    
+
+export const Services = [
+  {
+    id : 1,
+    text : '7 days Service Centre Replacement',
+    src : 'https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-returns._CB484059092_.png'
+  },
+  {
+    id : 2,
+    text : 'Free Delivery',
+    src : 'https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/trust_icon_free_shipping_81px._CB630870460_.png'
+  },
+  {
+    id : 3,
+    text : '1 Year Warranty Care' ,
+    src :'https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/81_81_Amazon_protect._CB433588194_.png'
+  },
+  {
+    id : 4,
+    text : 'Pay on Delivery',
+    src :'https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-cod._CB485937110_.png'
+  },
+  {
+    id : 5,
+    text : 'Top Brand',
+    src : 'https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-top-brand._CB617044271_.png'
+  },
+  {
+    id : 6,
+    text : 'Amazon Delivered',
+    src : 'https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-amazon-delivered._CB485933725_.png'
+  }
+]

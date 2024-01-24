@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 
 const LeftContainer = () => {
      return (
-          <div className="col-span-3 bg-[#FFFFFF]">
+          <div className="col-span-3 bg-[#FFFFFF] pt-8">
                <div className="p-5">
                     <p className="font-bold text-[14px] py-3">Customer Review</p>
                     <div className="text-yellow-500 cursor-pointer">
@@ -23,27 +23,27 @@ const LeftContainer = () => {
                     <div>
                          <div>
                               <input type="checkbox" name="apple" />
-                              <label for="apple" >Apple</label>
+                              <label htmlFor="apple" >Apple</label>
                          </div>
 
                          <div>
                               <input type="checkbox" name="oneplus" />
-                              <label for="oneplus" >OnePlus</label>
+                              <label htmlFor="oneplus" >OnePlus</label>
                          </div>
 
                          <div>
                               <input type="checkbox" name="realme" />
-                              <label for="realme" >realme</label>
+                              <label htmlFor="realme" >realme</label>
                          </div>
 
                          <div>
                               <input type="checkbox" name="samsung" />
-                              <label for="samsung" >Samsung</label>
+                              <label htmlFor="samsung" >Samsung</label>
                          </div>
 
                          <div>
                               <input type="checkbox" name="xiaomi" />
-                              <label for="xiaomi" >Xiaomi</label>
+                              <label htmlFor="xiaomi" >Xiaomi</label>
                          </div>
                     </div>
                </div>
