@@ -275,3 +275,28 @@ export const Services = [
     src : 'https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-amazon-delivered._CB485933725_.png'
   }
 ]
+
+export const OffersObj = [
+  {
+    id : 1,
+    title : 'Bank Offer',
+    text : 'Flat INR 1000 Instant Discount on ALL Banks Card Txn. Min purchase value ₹8,499'
+  },
+  {
+    id:2,
+    title:'No Cost EMI',
+    text: 'Upto ₹405.23 EMI interest savings on Amazon Pay ICICI Bank Credit Card'
+  },
+  {
+    id:3,
+    title:'Cashback',
+    text: '₹300 cashback & ₹2,200 welcome rewards on Amazon Pay ICICI Credit Card . 5% cashback every time on shopping. Apply now! T&C. Not applicable on Amazon Business Transactions'
+  },
+  {
+    id: 4,
+    title:'Partner Offers',
+    text:'Get upto 4 months Audible membership for Rs.2. T&C apply'
+  }
+]
+
+export const offersIcon = 'https://icons8.com/icon/12089/discount'
