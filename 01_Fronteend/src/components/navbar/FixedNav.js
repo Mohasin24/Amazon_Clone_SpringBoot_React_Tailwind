@@ -5,6 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
+
 // Array of categories for the dropdown menu
 const category = [
   { id: 1, text: "All" },
@@ -89,7 +90,11 @@ const FixedNav = () => {
 
       {/* Shopping Cart Section */}
       <div className="text-[0.9rem] hover:border p-2 hover:scale-95">
-        <div className="flex flex-col justify-center items-start">
+
+        <Link to={'/cart'}>
+        <div 
+          className="flex flex-col justify-center items-start"
+        >
           <div className="text-amber-500 pl-1">{cartValue}</div>
           <div className="flex items-end -mt-3">
             <div>
@@ -98,6 +103,7 @@ const FixedNav = () => {
             <div>Cart</div>
           </div>
         </div>
+        </Link>
       </div>
     </div>
   );
