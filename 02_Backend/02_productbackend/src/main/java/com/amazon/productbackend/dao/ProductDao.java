@@ -9,7 +9,7 @@ public interface ProductDao
 {
     List<Product> getAllProducts();
 
-    Optional<Product> getProductById(String id);
+    Product getProductByProductId(String productId);
 
     List<Product> saveAllProduct(List<Product> list);
 

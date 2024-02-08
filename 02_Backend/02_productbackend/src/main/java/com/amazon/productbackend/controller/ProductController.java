@@ -5,7 +5,6 @@ import com.amazon.productbackend.entity.Product;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @RestController
@@ -23,15 +22,15 @@ public class ProductController
         return  productDao.getAllProducts();
     }
 
-    @GetMapping("/product/{id}")
-    public Optional<Product> getProductById(@PathVariable String id){
-        return productDao.getProductById(id);
+    @GetMapping("/product/{productId}")
+    public Product getProductByProductId(@PathVariable(name = "productId") String productId){
+        return productDao.getProductByProductId(productId);
     }
 
     @PostMapping("/save-all")
     public List<Product> saveAllProducts(@RequestBody List<Product> list)
     {
-        list.forEach(product -> product.setProductID(UUID.randomUUID()));
+        list.forEach(product -> product.setProductId(UUID.randomUUID()));
         return productDao.saveAllProduct(list);
     }
 

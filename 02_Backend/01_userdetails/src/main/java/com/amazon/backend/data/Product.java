@@ -1,13 +1,12 @@
-package com.amazon.productbackend.entity;
+package com.amazon.backend.data;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.UUID;
 
-@Document("amazon_products")
+//@Entity
+//@Table(name = "Cart_Products")
 public class Product
 {
-    @Id
+
     private String id;
     private UUID productId;
     private String title;
@@ -109,7 +108,7 @@ public class Product
     public String toString() {
         return "Product{" +
                 "id='" + id + '\'' +
-                ", productId=" + productId +
+                ", productID=" + productId +
                 ", title='" + title + '\'' +
                 ", url='" + url + '\'' +
                 ", detailUrl='" + detailUrl + '\'' +
@@ -120,4 +119,3 @@ public class Product
                 '}';
     }
 }
-

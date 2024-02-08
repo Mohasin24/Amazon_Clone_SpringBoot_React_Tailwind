@@ -5,10 +5,8 @@ import com.amazon.productbackend.entity.Product;
 import com.amazon.productbackend.repository.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -27,8 +25,8 @@ public class ProductDaoImpl implements ProductDao {
     }
 
     @Override
-    public Optional<Product> getProductById(String id) {
-        return productRepo.findById(id);
+    public Product getProductByProductId(String productId) {
+        return productRepo.findByProductId(UUID.fromString(productId));
     }
 
     @Override
@@ -38,7 +36,7 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public Product saveProduct(Product product) {
-        product.setProductID(UUID.randomUUID());
+        product.setProductId(UUID.randomUUID());
         return productRepo.save(product);
     }
 
